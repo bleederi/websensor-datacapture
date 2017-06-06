@@ -142,7 +142,7 @@ for buttonpress in buttondata:
 
 def buttonselection():      #Condition for selecting the buttons to be plotted
     for x in buttondata_array:
-        if x['button']  == 2:    #Select all buttons that fulfil this condition
+        if x['button']  == 0:    #Select all buttons that fulfil this condition
             yield x
 
 #prettyprint(buttonselection())
@@ -183,4 +183,4 @@ def plot(buttons, sameplot=False):
                 plt.savefig('button_' + str(button['button']) + '_' +str(index)  + '.svg', format='svg')
         plt.show() 
 
-#plot(buttondata_array, True)
+plot(buttondata_array, True)

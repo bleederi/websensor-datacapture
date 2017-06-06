@@ -94,7 +94,6 @@ def read_from_file(dataset):   #Read string data from file and convert it to Pyt
                                 key = seq.split(':', 1)[0].translate({ord(c): None for c in "'"})       #Translate for removing the "'"
                                 data = seq.split(':', 1)[1]
                                 if not(key.endswith("fft")):
-                                        print(key, data)
                                         data_read = ast.literal_eval(data)      #Cannot read numpy arrays
                                 else:   #Handle numpy arrays separately
                                         #First find the dict keys
