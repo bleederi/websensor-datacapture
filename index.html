@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Sensor Privacy/Security test</title>
+<title>Sensor data capture tool</title>
 
 <meta charset="utf-8">
 <head>
@@ -19,7 +19,9 @@
         }
 </script>
 <div class="box" id="buttons">
-
+<button id="startCapture" ontouchstart="startCapture();" ontouchend="release()" >Start capturing data</button>
+<!--
+Can be enabled if pin pad needed
 <h3>Pin pad</h3>
 
 <button id="1" ontouchstart="get_click(this.id)" ontouchend="release()">1</button>
@@ -37,7 +39,7 @@
 <button id="*" ontouchstart="get_click(this.id)" ontouchend="release()">*</button>
 <button id="0" ontouchstart="get_click(this.id)" ontouchend="release()">0</button>
 <button id="extra" ontouchstart="get_click(this.id)" ontouchend="release()">extra</button>
-
+-->
 </div>
 
 </br>

@@ -1,5 +1,5 @@
 /*
- * Websensor Privacy Project
+ * Websensor data capture tool
  * https://github.com/jessenie-intel/web-sensor-js-privacy
  *
  * Copyright (c) 2017 Jesse Nieminen
@@ -117,6 +117,16 @@ function reset_data()   //to be run every button press and release
 }
 
 function get_click(buttonID)    //ID not necessarily numerical
+{
+        currentButton = buttonID;
+        document.getElementById("bstate").textContent = `Button state ${currentButton}`;
+        console.log(currentButton + ' pressed down');
+        recording = true;
+        reset_data();
+        reading = setInterval(read_sensors, 1000/sensorfreq);     //start saving data from sensors in loop
+}
+
+function startCapture()
 {
         currentButton = buttonID;
         document.getElementById("bstate").textContent = `Button state ${currentButton}`;
