@@ -128,7 +128,7 @@ function get_click(buttonID)    //ID not necessarily numerical
 
 function startCapture()
 {
-        currentButton = buttonID;
+        currentButton = 'capture';
         document.getElementById("bstate").textContent = `Button state ${currentButton}`;
         console.log(currentButton + ' pressed down');
         recording = true;
