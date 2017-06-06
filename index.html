@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sensor Privacy/Security test</title>
+
+<meta charset="utf-8">
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+
+
+<body>
+<script type="text/javascript" src="script.js"></script>
+<script>
+        if(!(sensors_started))
+        {
+                sensors = startSensors();
+        }
+</script>
+<div class="box" id="buttons">
+
+<h3>Pin pad</h3>
+
+<button id="1" ontouchstart="get_click(this.id)" ontouchend="release()">1</button>
+<button id="2" ontouchstart="get_click(this.id)" ontouchend="release()">2</button>
+<button id="3" ontouchstart="get_click(this.id)" ontouchend="release()">3</button>
+</br>
+<button id="4" ontouchstart="get_click(this.id)" ontouchend="release()">4</button>
+<button id="5" ontouchstart="get_click(this.id)" ontouchend="release()">5</button>
+<button id="6" ontouchstart="get_click(this.id)" ontouchend="release()">6</button>
+</br>
+<button id="7" ontouchstart="get_click(this.id)" ontouchend="release()">7</button>
+<button id="8" ontouchstart="get_click(this.id)" ontouchend="release()">8</button>
+<button id="9" ontouchstart="get_click(this.id)" ontouchend="release()">9</button>
+</br>
+<button id="*" ontouchstart="get_click(this.id)" ontouchend="release()">*</button>
+<button id="0" ontouchstart="get_click(this.id)" ontouchend="release()">0</button>
+<button id="extra" ontouchstart="get_click(this.id)" ontouchend="release()">extra</button>
+
+</div>
+
+</br>
+<button id="storeDataArray" onclick="store('dataArray', dataArray);">Store data array</button>
+<button id="retrieveDataArray" onclick="console.log(retrieve('dataArray'))">Retrieve data array</button>
+</br>
+<button id="clearStorage" onclick="localStorage.clear()">Clear local storage</button>
+</br>
+<button id="sendData" onclick="send_data()">Send data to server</button>
+</br>
+<button id="changeFrequency" onclick="change_frequency()">Change sensor frequency</button>
+</br>
+<button id="exportData" onclick="exportData()">Export data</button>
+</br>
+<p id="bstate">Button state</p>
+<p id="accl">Acceleration</p>
+<p id="g_accl">Gravity</p>
+<p id="accl_nog">Acceleration without gravity</p>
+<p id="ori">Orientation</p>
+<p id="rrate">Rotation rate</p>
+<p id="sensorfreq">Sensor frequency</p>
+</body>
+</html>

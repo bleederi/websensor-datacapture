@@ -1,0 +1,9 @@
+button {
+    display: inline-block;
+    height: 25vh;
+    padding: 0;
+    margin: 0;
+    vertical-align: top;
+    width: 31vw;
+}
+
