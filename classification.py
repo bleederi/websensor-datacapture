@@ -32,8 +32,8 @@ from helperfuncs import prettyprint, count_features, read_from_file, list_keys
 #TODO: Name variables better, same variable names used in different places (for example 'data')
 
 #Load dataset
-datafilename = 'data_1_processed'
-datafilename_vector = 'data_1_vector_processed'
+datafilename = 'data_processed'
+datafilename_vector = 'data_vector_processed'
 with open(datafilename, 'r') as datafile:
         dataset = datafile.read()
 with open(datafilename_vector, 'r') as datafile_vector:

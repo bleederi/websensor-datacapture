@@ -404,7 +404,7 @@ def remove_unnecessary(jsondata):       #Remove the original time and frequency 
                 featurevector.append(buttondict)
         return featurevector
 
-filename = 'data_1'
+filename = 'data'
 datafile = open(filename,'r')
 jsondata = json.load(datafile)
 datafile.close()

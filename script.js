@@ -126,9 +126,9 @@ function get_click(buttonID)    //ID not necessarily numerical
         reading = setInterval(read_sensors, 1000/sensorfreq);     //start saving data from sensors in loop
 }
 
-function startCapture()
+function startCapture(buttonID)
 {
-        currentButton = 'capture';
+        currentButton = buttonID;
         document.getElementById("bstate").textContent = `Button state ${currentButton}`;
         console.log(currentButton + ' pressed down');
         recording = true;
