@@ -16,6 +16,9 @@
 import math
 import ast
 
+__author__ = "Jesse Nieminen"
+__status__ = "Development"
+
 def prettyprint(jsondata, *args): #Clearly print the data - input is all the button data and optional argument specifies keys to be printed
         for buttonpress in jsondata:    ##Loop through all the button presses
                 print("\nNew button: ", buttonpress['button'], "\n")

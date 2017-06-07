@@ -20,6 +20,9 @@ from collections import OrderedDict
 import pickle
 from helperfuncs import prettyprint, find_interval, convert_orientation
 
+__author__ = "Jesse Nieminen"
+__status__ = "Development"
+
 def remove_initial(jsondata):   #Do operations on JSON formatted data
         cancelledjsondata = [] #New JSON data with the effect of initial position and orientation cancelled
         for buttonpress in jsondata:

@@ -29,6 +29,9 @@ from sklearn.svm import SVC
 import numpy
 from helperfuncs import prettyprint, count_features, read_from_file, list_keys
 
+__author__ = "Jesse Nieminen"
+__status__ = "Development"
+
 #TODO: Name variables better, same variable names used in different places (for example 'data')
 
 #Load dataset
